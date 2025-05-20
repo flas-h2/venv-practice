@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')
+    }}"" />
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Get jokes here</h1>
+    <!--
+    <form action="/joke" method="POST">
+      <select name="mood" id="mood" required>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="stressed">Stressed</option>
+        <option value="bored">Bored</option>
+      </select>
+    </form>
+     -->
+    <p>{{joke}}</p>
+
+    <p><a href="/joke">Jokes Here</a></p>
+  </body>
+</html>
