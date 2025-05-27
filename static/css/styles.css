@@ -1,4 +1,62 @@
-h1 {
-    color: green;
-    font-size: 4em;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.joke-result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 5px;
+}
+
+.joke {
+  font-size: 1.2em;
+  font-style: italic;
 }

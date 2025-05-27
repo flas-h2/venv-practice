@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')
-    }}"" />
-    <script src="{{url_for('static', filename='js/script.js')}}"></script>
-    <title>Home</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <title>Dad Joke Machine - Home</title>
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/joke">Get a Joke</a>
+    <a href="/search">Search Jokes</a>
+  </nav>
+
+  <div class="container">
     <h1>Welcome to the Dad Joke Generator!</h1>
-    <p><a href="/joke">Jokes Here</a></p>
-  </body>
+    <p>This site was developed to help you sharpen your joke catalog and boost your mood with classic dad humor.</p>
+
+    <div class="cards">
+      <div class="card">
+        <p><strong>Joke #1:</strong> I'm reading a book on anti-gravity. It's impossible to put down!</p>
+      </div>
+      <div class="card">
+        <p><strong>Joke #2:</strong> Why don't eggs tell jokes? They'd crack each other up!</p>
+      </div>
+      <div class="card">
+        <p><strong>Joke #3:</strong> Did you hear about the restaurant on the moon? Great food, no atmosphere.</p>
+      </div>
+    </div>
+
+    <a class="btn" href="/joke">Try the Joke Machine</a>
+  </div>
+</body>
 </html>
